@@ -1,0 +1,32 @@
+@mixin baseline( $size: 0 , $top: true, $bottom: true){
+  $size: (($base-font+$size)/10);
+  $margin: ((($spacing*2)/10)/$size)+em;
+  font-size: $size+em;
+  @if $bottom{
+    margin-bottom: $margin;
+  }
+  @if $top{
+    margin-top: $margin;
+  }
+}
+@mixin column-span($span){
+  width: ((($width/$span)/10)-(($spacing/10)*4))+em;
+  margin: ($spacing/10)+em;
+  padding: ($spacing/10)+em;
+}
+@mixin grid($colums: 12 , $span: 1){
+  width: ((($width/$colums)/10)-(($spacing/10)*4))*$span +em;
+  margin: ($spacing/10)+em;
+  padding: ($spacing/10)+em;
+}
+@mixin clearfix {
+display: inline-block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html & { height: 1px }
+}

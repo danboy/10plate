@@ -1,0 +1,103 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:none;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+html{
+  font-size:16px;
+  color: #fff;
+  background: #431B09;
+}
+
+body{
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: (($spacing*2)/10)+em; 
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+display:block;
+}
+
+nav ul {
+list-style:none;
+}
+
+blockquote, q {
+quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+
+
+
+/* change border colour to suit your needs */
+hr {
+display:block;
+height:1px;
+border:0;   
+border-top:1px solid #cccccc;
+margin:1em 0;
+padding:0;
+}
+
+input, select {
+vertical-align:middle;
+}
+
+h2 {
+  font: Arial, Helvetica, sans-serif;
+  color: #AE8563;
+}
+
+.sup {
+  font: Arial, Helvetica, sans-serif;
+  vertical-align: super;
+  color: #AE8563;
+}
+
+strong {
+  font: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  color: #AE8563;
+}
+
+a:link {
+  color:#679AA0;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+#background{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+}
+a{
+&:visited{color:#fff;}
+}

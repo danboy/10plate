@@ -1,0 +1,116 @@
+h1,h2,h3,h4,h5{font-weight:normal;}
+header{
+  h1#logo{
+    line-height:99999em;
+overflow: hidden;
+    height: 75px;
+  }
+}
+#canvas{
+  width:96em;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background-repeat:no-repeat;
+  background-position:center center;
+  -o-background-size: 100% 100%, auto;
+  -moz-background-size: 100% 100%, auto;
+  -webkit-background-size: 100% 100%, auto;
+  background-size: 100% 100%, auto;
+  h1{
+    font-weight: normal;
+    @include baseline(14);
+  }
+  header{
+    clear: both;
+    width: 100%;
+    menu{
+      position: absolute;
+      right:0;
+      top:0;
+      display:block;
+      clear:both;
+      list-style:none;
+      float:right;
+      li{
+        display:block;
+        text-align: right;
+        font-size: ($base-font - 2)/10+em;
+        margin-bottom: 0;
+        padding-right: .5em;
+        border-right: .1em none transparent;
+        &:hover{
+          border-right: .1em solid $color;
+        }
+        a{
+          color: $color;
+          text-decoration: none;
+        }
+      }
+    }
+    @include clearfix;
+  }
+  ul#gallery{
+    height: 5em;
+    overflow: visible;
+    li{
+      display:block;
+      float:left;
+      list-style:none;
+      @include column_span(4);
+      padding-left:0;
+      padding-top:0;
+      margin-left:0;
+      overflow: hidden;
+      figure{
+        overflow:hidden;
+        img{
+          width:100%;
+        }
+      }
+      figcaption{
+        opacity: .9;
+        padding: .2em .5em;
+        background-color: #111;
+        @include baseline(0, false, true);
+      }
+    }
+  }
+  section{
+    float:left;
+    &.copy{
+      @include grid(4,3);
+      position: relative;
+      .bac{
+        background: #000;
+        opacity:.5;
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        z-index:-1;
+      }
+    }
+    &.details{
+      @include grid(4,1);
+      padding:0;
+      margin-left:0;
+      figure{
+        img{
+          width: 100%;
+        }
+      }
+    }
+    p{
+      @include baseline(-4);
+      z-index:1;
+      font-weight: normal;
+    }
+    h2{
+      @include baseline(2,false,true);
+      font-weight: normal;
+    }
+
+  }
+}

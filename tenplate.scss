@@ -1,0 +1,11 @@
+$width: 960;
+$base-font: 16;
+$spacing: 10;
+$background: #431B09;
+$headings: #AE8563;
+$link-color: #ffc000;
+$color: #fff;
+
+@import 'lib/mixins';
+@import 'lib/main';
+@import 'client';
