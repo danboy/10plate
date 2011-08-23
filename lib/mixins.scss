@@ -30,3 +30,7 @@ display: inline-block;
   }
   * html & { height: 1px }
 }
+@mixin rel-font-size($size, $lines) {
+	font-size:   $size;
+	line-height: 1em * $lines * ($line-height/$size);
+}
