@@ -14,7 +14,7 @@
   margin: ($spacing/10)+em;
   padding: ($spacing/10)+em;
 }
-@mixin grid($colums: 12 , $span: 1){
+@mixin grid($span: 1, $colums: 12 ){
   width: ((($width/$colums)/10)-(($spacing/10)*4))*$span +em;
   margin: ($spacing/10)+em;
   padding: ($spacing/10)+em;

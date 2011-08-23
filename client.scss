@@ -79,7 +79,7 @@ overflow: hidden;
   section{
     float:left;
     &.copy{
-      @include grid(4,3);
+      @include grid(3,4);
       position: relative;
       .bac{
         background: #000;
@@ -93,7 +93,7 @@ overflow: hidden;
       }
     }
     &.details{
-      @include grid(4,1);
+      @include grid(1,4);
       padding:0;
       margin-left:0;
       figure{
